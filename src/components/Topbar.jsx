@@ -5,7 +5,7 @@ const Topbar = () => {
   const linkClass = 'hover:text-c-1-0 transition-all hover:translate-y-[-2px] duration-200';
   return (
     <>
-      <div className='flex responsivePad items-center font-satoshi-medium bg-c-3-0 justify-between py-6 p m3'>
+      <div className='flex responsivePad items-center font-satoshi-medium bg-c-3-0 justify-between py-4 p m3 max-md:py-2'>
 
         <div className='flex items-center'> 
           <img src={logo} alt="" />
