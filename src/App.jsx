@@ -3,6 +3,7 @@ import ServicesLine  from "./components/ServicesLine"
 import Hero from "./components/Hero"
 import Cta from "./components/Cta"
 import Services from "./components/Services"
+import Job from "./components/Job"
 
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
       <Hero heroTitle={heroTitle}/>
       <Cta/>
       <Services/>
+      <Job/>
     </>
   )
 }
