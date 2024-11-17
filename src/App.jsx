@@ -2,6 +2,7 @@ import Topbar from "./components/Topbar"
 import ServicesLine  from "./components/ServicesLine"
 import Hero from "./components/Hero"
 import Cta from "./components/Cta"
+import Services from "./components/Services"
 
 
 export default function App() {
@@ -12,6 +13,7 @@ export default function App() {
       <ServicesLine/>
       <Hero heroTitle={heroTitle}/>
       <Cta/>
+      <Services/>
     </>
   )
 }
