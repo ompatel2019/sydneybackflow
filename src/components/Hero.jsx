@@ -36,7 +36,7 @@ const Hero = ({heroTitle}) => {
               Plumbing Experts in Sydney
             </h1>
 
-            <div className='space-y-4 lg:flex lg:space-x-8'>
+            <div className='space-y-8'>
               {perks.map((perk, perkIndex) => (
                   <div key={perkIndex} className='flex gap-2 items-center'>
                     <div className='bg-c-1-0 rounded-full flex items-center justify-center w-[64px] h-[64px] lg:w-[96px] lg:h-[96px]'>
