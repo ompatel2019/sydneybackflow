@@ -5,6 +5,7 @@ import Cta from "./components/Cta"
 import Services from "./components/Services"
 import Job from "./components/Job"
 import Details from "./components/Details"
+import Form from "./components/Form"
 
 
 export default function App() {
@@ -18,6 +19,7 @@ export default function App() {
       <Services/>
       <Job/>
       <Details/>
+      <Form/>
     </>
   )
 }

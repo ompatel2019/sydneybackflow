@@ -3,7 +3,7 @@ import React from 'react'
 const Detail = ({detail}) => {
   return (
     <>
-      <div className='flex flex-col justify-around border-l-4 px-4 text-white space-y-4'>
+      <div className='flex flex-col justify-around md:border-l-4 px-4 text-white space-y-4 max-md:border-b-4 max-md:pb-4'>
         <div className='flex items-center space-x-1'>
           <img className='w-8 h-8' src={detail.photo} alt="" />
           <p className='font-satoshi-bold'>{detail.photoDescription}</p>
