@@ -62,7 +62,7 @@ const Form = () => {
   };
 
   const inputFieldClass =
-    'p-2 px-4 rounded-sm border border-gray-300 focus:border-c-1 focus:outline-none text-c-5-0 w-full hover:px-6 transition-all';
+    'p-2 px-4 rounded-sm focus:border-c-1 focus:outline-none text-c-5-0 w-full hover:px-6 transition-all bg-transparent border-b-2';
 
   const inputFields = [
     {
@@ -135,32 +135,43 @@ const Form = () => {
           ))}
         </div>
 
-        <form className="text-c-4-0 space-y-4" onSubmit={onSubmit}>
-          {inputFields.map((field) => (
-            <div className="space-y-2" key={field.id}>
-              <p>{field.label}</p>
-              {field.type !== 'textarea' ? (
-                <input
-                  type={field.type}
-                  id={field.id}
-                  name={field.name}
-                  placeholder={field.placeholder}
-                  className={field.className}
-                />
-              ) : (
-                <textarea
-                  required
-                  id={field.id}
-                  name={field.name}
-                  placeholder={field.placeholder}
-                  className={field.className}
-                  rows={field.rows}
-                />
-              )}
-            </div>
-          ))}
-          <button className="bg-c-3-0 flex items-center p-2 space-x-2 font-medium rounded-sm px-6 w-full justify-center hover:bg-blue-300 transition-colors">
-            <p>Send Inquiry</p>
+        <form className="text-c-3-0 space-y-8" onSubmit={onSubmit}>
+          <div className='flex space-x-4'>
+            <input 
+              required 
+              type="text" 
+              id="name" 
+              name="name" 
+              placeholder='Full Name*' 
+              className={inputFieldClass} 
+              />
+
+            <input 
+              required 
+              type="text" 
+              id="contact" 
+              name="contact" 
+              placeholder='Contact No.*' 
+              className={inputFieldClass} 
+              />
+          </div>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              placeholder='Email' 
+              className={inputFieldClass} 
+              />
+              <textarea
+                required
+                id= "message"
+                name="message"
+                placeholder="Inquiry*"
+                className= {`${inputFieldClass} `}
+                rows="10"
+              />
+          <button className="bg-c-1-0 flex items-center p-4 space-x-2 font-medium rounded-sm px-6 w-full justify-center hover:bg-blue-300 transition-colors h8 font-satoshi-medium text-white">
+            <p>Submit</p>
             <i className="fa-regular fa-paper-plane"></i>
           </button>
         </form>

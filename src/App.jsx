@@ -6,6 +6,9 @@ import Services from "./components/Services"
 import Job from "./components/Job"
 import Details from "./components/Details"
 import Form from "./components/Form"
+import Testimonials from "./components/Testimonials"
+import AboutUs from "./components/AboutUs"
+import Footer from "./components/Footer"
 
 
 export default function App() {
@@ -20,6 +23,9 @@ export default function App() {
       <Job/>
       <Details/>
       <Form/>
+      <Testimonials/>
+      <AboutUs/>
+      <Footer/>
     </>
   )
 }
