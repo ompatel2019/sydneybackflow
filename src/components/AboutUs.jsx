@@ -4,7 +4,7 @@ import aboutImg from '../assets/aboutUs.jpg'
 const AboutUs = () => {
   return (
     <>
-      <div className='bg-c-3-0 responsivePad py-20 max-md:py-8 space-y-8'>
+      <div id='about' className='bg-c-3-0 responsivePad py-24 max-md:py-10 space-y-8'>
         <div className="max-lg:space-y-4 lg:flex justify-between">
           <h2 className="font-satoshi-black h4 w-full">About Us</h2>
           <p className="font-satoshi-medium h8 w-full">

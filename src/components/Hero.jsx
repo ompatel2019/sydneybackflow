@@ -18,7 +18,7 @@ const Hero = ({heroTitle}) => {
     }
   ]
   return (
-    <div className='relative flex flex-col text-c-3-0 font-satoshi'>
+    <div id='hero' className='relative flex flex-col text-c-3-0 font-satoshi'>
       <HeroWrapper />
       <div className='absolute inset-0 bg-c-4-0 bg-opacity-40 w-full z-10'></div>
 

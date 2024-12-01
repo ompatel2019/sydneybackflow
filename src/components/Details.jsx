@@ -11,26 +11,26 @@ const Details = () => {
       photoDescription: 'Location',
       description: 'Sydney to Wollongong Region',
       linkDescription: 'Visit Map',
-      link:''
+      link:'https://maps.google.com/maps'
     }, 
     {
       photo: email,
       photoDescription: 'Email',
       description: 'sydneybackflow@bigpond.com',
       linkDescription: 'Send Email',
-      link:''
+      link:'mailto:sydneybackflow@bigpond.com'
     }, 
     {
       photo: phone,
       photoDescription: 'Phone',
       description: '0413 536 277',
       linkDescription: 'Call',
-      link:''
+      link:'tel:0413546277'
     }, 
   ]
   return (
     <>
-      <div className='responsivePad bg-c-1-0 py-16 max-md:py-8 space-y-12'>
+      <div id='details' className='responsivePad bg-c-1-0 py-20 max-md:py-12 space-y-12'>
         <div className='text-white text-center space-y-4 max-md:space-y-2'>
           <h2 className='font-satoshi-black h4'>
             Our Details
@@ -43,7 +43,12 @@ const Details = () => {
         <div className='flex mr-auto justify-around max-md:flex-col max-md:space-y-10'>
           {
             details.map((detail, detailIndex) => (
-              <Detail key={detailIndex} detail={detail}/>
+              <a href={detail.link} 
+              key={detailIndex} 
+              target="_blank" 
+              rel="noopener noreferrer">
+                <Detail key={detailIndex} detail={detail}/>
+              </a>
             ))
           }
         </div>

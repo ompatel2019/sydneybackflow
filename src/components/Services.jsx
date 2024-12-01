@@ -31,7 +31,7 @@ const Services = () => {
 
   return (
     <>
-      <div className='bg-c-3-0 responsivePad lg:py-20 py-16 md:py-12 max-md:py-8 space-y-12 font-satoshi-bold'>
+      <div id='services' className='bg-c-3-0 responsivePad lg:py-20 py-16 md:py-12 max-md:py-8 space-y-12 font-satoshi-bold'>
         <div className='space-y-4'>
           <h2 className='h4 text-left font-satoshi-black'>
             Our Plumbing Solutions
@@ -41,7 +41,7 @@ const Services = () => {
           </p>
         </div>
 
-        <div className='grid grid-cols-3'>
+        <div className='grid grid-cols-3 gap-4'>
           {services.map((service, serviceIndex) => (
             <Service key={serviceIndex} service={service} />
           ))}

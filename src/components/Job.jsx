@@ -26,9 +26,11 @@ const Job = () => {
 
           <p className='max-lg:text-center'>Beyond our superior services, we offer complimentary diagnostic assessments and a thorough plumbing inspection report, giving you a clear understanding of your property’s needs. Our detailed reports include actionable recommendations for necessary work, prioritizing urgent repairs and suggesting proactive maintenance options that can be managed through our annual plans. Our aim is to help you maintain your property in peak condition, offering long-term value and peace of mind.</p>   
 
-          <button className='p-3 bg-c-3-0 rounded-md text-c-4-0 hover:bg-c-1-0 hover:text-c-3-0 transition-all font-satoshi-medium h8'>
-            Get a Free Quote
-          </button>
+          <a className='text-center p-3 bg-c-3-0 rounded-md text-c-4-0 hover:bg-c-1-0 hover:text-c-3-0 transition-all font-satoshi-medium h8' href="#contact">
+            <button className=''>
+              Get a Free Quote
+            </button>
+          </a>
           
         </div>
       </div>

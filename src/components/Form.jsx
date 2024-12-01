@@ -102,7 +102,7 @@ const Form = () => {
 
   return (
     <>
-      <div className="responsivePad py-16 max-md:py-8 bg-c-4-0 space-y-8">
+      <div id='contact' className="responsivePad py-20 max-md:py-12 bg-c-4-0 space-y-8">
         <div className="text-white text-center space-y-4 max-md:space-y-2">
           <h2 className="font-satoshi-black h4">Get in touch</h2>
           <p className="font-satoshi-medium h8">
