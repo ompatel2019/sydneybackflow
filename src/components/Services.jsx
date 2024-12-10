@@ -1,34 +1,8 @@
 import React from 'react';
-import Service from './Service';
+import Service from './Service.jsx'; 
+import services from '../services'; 
 
 const Services = () => {
-  const services = [
-    { 
-      serviceName: 'Service #1',
-      service: ''
-    },
-    { 
-      serviceName: 'Service #2',
-      service: ''
-    },
-    { 
-      serviceName: 'Service #3',
-      service: ''
-    },
-    { 
-      serviceName: 'Service #4',
-      service: ''
-    },
-    { 
-      serviceName: 'Service #5',
-      service: ''
-    },
-    { 
-      serviceName: 'Service #6',
-      service: ''
-    },
-  ];
-
   return (
     <>
       <div id='services' className='bg-c-3-0 responsivePad lg:py-20 py-16 md:py-12 max-md:py-8 space-y-12 font-satoshi-bold'>
@@ -41,11 +15,12 @@ const Services = () => {
           </p>
         </div>
 
-        <div className='grid grid-cols-3 gap-4'>
-          {services.map((service, serviceIndex) => (
-            <Service key={serviceIndex} service={service} />
+        <div className='grid grid-cols-3 gap-4 max-md:grid-cols-2'>
+          {services.map(service => (
+            <Service key={service.id} serviceId={service.id} serviceIndex={service.index} serviceImg={service.serviceImg} serviceName={service.serviceName} />
           ))}
         </div>
+
       </div>
     </>
   );

@@ -11,7 +11,7 @@ const Details = () => {
       photoDescription: 'Location',
       description: 'Sydney to Wollongong Region',
       linkDescription: 'Visit Map',
-      link:'https://maps.google.com/maps'
+      link:'https://g.co/kgs/qnNpbdD'
     }, 
     {
       photo: email,

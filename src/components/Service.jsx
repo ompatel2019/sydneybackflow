@@ -1,15 +1,12 @@
 import React from 'react';
-import placeHolder from '../assets/placeholder.jpg'
 
-const Service = ({ service }) => {
+const Service = ({ serviceId, serviceIndex, serviceImg, serviceName }) => {
   return (
-    <div className='hover:translate-y-[-4px] transition-all duration-150 ease-out'>
-      <p className='h8'>
-        {service.serviceName}
-      </p>
-    <img className='rounded-lg' src={placeHolder} alt="" /> 
+    <div id={`service-${serviceId}`} className='bg-c-3-0 border-2 border-c-4-0 rounded-md p-4 flex flex-col items-center justify-center space-y-4 lg:py-12 md:py-8 sm:py-6 hover:translate-y-[-10px] transition-translate duration-[0.2s]'>
+      <img src={serviceImg} alt={serviceName} className="max-md:w-12 max-md:h-12"/>
+      <p className="text-center font-medium text-c-5-0">{serviceName}</p>
     </div>
   );
-};
+}
 
 export default Service;

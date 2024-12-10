@@ -1,39 +1,37 @@
 import React from 'react'
-import logo from '../assets/Logo(Nav).png'
 
-const Footer = () => {
+const footer = () => {
+  const linkClass = 'hover:underline transition-all p'
+
   return (
     <>
-      <div className='responsivePad bg-c-4-0 font-satoshi-medium text-c-3-0 py-8 max-md:py-4 h8'>
+      <div className='bg-c-3-0 responsivePad flex flex-col pt-12'>
 
-        <div className='flex justify-between items-center'> 
+        <div className='flex justify-between py-4'>
+          <p>
+            Logo
+          </p>
 
-          <div className='flex items-center'> 
-            <img src={logo} alt="" />
-          </div>
-
-          <ul className='flex space-x-4 max-md:hidden'>
-            <li>
-              <a href="#contacts">Contacts</a>
-            </li>
-            <li>
-              <a href="#details">Location</a>
-            </li>
-            <li>
-              <a href="#hero">Go Top</a>
-            </li>
+          <ul className='flex space-x-4 max-sm:space-x-2'>
+            <li className={linkClass}><a href="sydneybackflow@bigpond.com">Email</a></li>
+            <li className={linkClass}><a href="tel:0413546277">Phone</a></li>
+            <li className={linkClass}><a href="https://g.co/kgs/qnNpbdD">Locations</a></li>
           </ul>
 
-          <div className='space-x-4'>
-            <a href=""><i className="fa-brands fa-instagram"></i></a>
-            <a href=""><i className="fa-brands fa-facebook"></i></a>
+          <div className='space-x-2'>
+            <i className="fa-brands fa-facebook cursor-pointer"></i>
+            <i className="fa-brands fa-instagram cursor-pointer"></i>
           </div>
-
         </div>
 
+        <div className='border-t-2 border-c-2-0 py-4'>
+          <p className='text-center p m3'>
+          © Sydney Backflow Plumbing & Excavation. All rights reserved.
+          </p>
+        </div>
       </div>
     </>
   )
 }
 
-export default Footer
+export default footer
