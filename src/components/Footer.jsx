@@ -9,7 +9,7 @@ const footer = () => {
 
         <div className='flex justify-between py-4'>
           <p>
-            Logo
+            
           </p>
 
           <ul className='flex space-x-4 max-sm:space-x-2'>
